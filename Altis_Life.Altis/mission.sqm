@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=650;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2474;
+		nextID=2475;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9238.6523,94.270386,8011.2227};
-		dir[]={0.034411334,-0.62240028,0.78200704};
-		up[]={0.027364001,0.78269243,0.62180591};
-		aside[]={0.99909037,-7.6306605e-008,-0.043964665};
+		pos[]={7861.1978,116.41408,16140.91};
+		dir[]={0.68287742,-0.30780074,0.66260314};
+		up[]={0.22092551,0.9514336,0.21436812};
+		aside[]={0.69641298,-3.001187e-007,-0.71771723};
 	};
 };
 binarizationWanted=0;
@@ -643,7 +643,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1443;
+		items=1444;
 		class Item0
 		{
 			dataType="Marker";
@@ -61386,6 +61386,46 @@ class Mission
 			colorName="ColorRed";
 			id=2473;
 			atlOffset=0.0027961731;
+		};
+		class Item1443
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7862.0161,114.91331,16144.731};
+				angles[]={6.2700601,0.73052502,6.2809162};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this addAction[""Craft"",{[""craftingItems""] spawn cat_crafting_fnc_craft}];";
+			};
+			id=2474;
+			type="Land_Workbench_01_F";
+			atlOffset=0.29799652;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
