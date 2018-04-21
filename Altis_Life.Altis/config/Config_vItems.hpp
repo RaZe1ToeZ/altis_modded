@@ -288,6 +288,28 @@ class VirtualItems {
         icon = "icons\ico_storageBig.paa";
     };
 
+    class zipties {
+        variable = "zipties";
+        displayName = "STR_Item_ZipTies";
+        weight = 0;
+        buyPrice = 1200;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_ziptie.paa";
+    };
+	
+	class blindfold {
+        variable = "blindfold";
+        displayName = "STR_Item_Blindfold";
+        weight = 0;
+        buyPrice = 600;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ico_blindfold.paa";
+    };
+
     //Mined Items
     class oil_unprocessed {
         variable = "oilUnprocessed";

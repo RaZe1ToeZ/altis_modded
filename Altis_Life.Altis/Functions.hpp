@@ -373,4 +373,17 @@ class Life_Client_Core {
         class vehTakeItem {};
         class vInteractionMenu {};
     };
+
+    class CivTieing {
+		file = "core\civilian\CivTieing";
+		class gagAction {};					
+		class gagged {};
+		class removeGagAction {};
+		class tieing {};
+		class tieingAction {};
+		class tieingActionb {};
+		class tieingb {};
+		class untie {};
+		class untieb {};
+	};
 };

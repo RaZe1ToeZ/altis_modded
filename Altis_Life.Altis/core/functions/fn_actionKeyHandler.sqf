@@ -16,6 +16,9 @@ _isWater = surfaceIsWater (visiblePositionASL player);
 if (playerSide isEqualTo west && {player getVariable ["isEscorting",false]}) exitWith {
     [] call life_fnc_copInteractionMenu;
 };
+if (playerSide isEqualTo civilian && {player getVariable ["isEscorting",false]} && (!(_curObject getVariable ["restrained",false]))) exitWith {
+    [] call life_fnc_copInteractionMenu;
+};
 
 if (LIFE_SETTINGS(getNumber,"global_ATM") isEqualTo 1) then{
     //Check if the player is near an ATM.
@@ -93,6 +96,9 @@ if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _cur
 //If target is a player then check if we can use the cop menu.
 if (isPlayer _curObject && _curObject isKindOf "Man") then {
     if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
+        [_curObject] call life_fnc_copInteractionMenu;
+    };
+if ((!(_curObject getVariable ["restrained",false])) && !dialog && playerSide isEqualTo civilian) then {
         [_curObject] call life_fnc_copInteractionMenu;
     };
 } else {
