@@ -17,8 +17,8 @@ if (west countSide playableUnits < (LIFE_SETTINGS(getNumber,"minimum_cops"))) ex
      hint format [localize "STR_Civ_NotEnoughCops",(LIFE_SETTINGS(getNumber,"minimum_cops"))];
 };
 
-private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
-private _altisArray = [16019.5,16952.9,0];
+private _vaultHouse = [[["Altis", "Land_BackAlley_01_l_gate_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
+private _altisArray = [20961.1,19234.9,0.242001];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
 private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
 
