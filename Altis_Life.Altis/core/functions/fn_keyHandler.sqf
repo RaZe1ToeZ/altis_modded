@@ -255,6 +255,21 @@ switch (_code) do {
         };
     };
 
+    //Knock out, this is experimental and yeah... (Shift + G)
+	case 34: {
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then {
+			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player GVAR ["restrained",false]) && !life_istazed && !life_isknocked) then {
+				[cursorTarget] spawn life_fnc_knockoutAction;
+              if("ItemRadio" in assignedItems cursorTarget) then {
+      cursorTarget removeweapon "ItemRadio";
+      hint "The cellphone of the person was placed on the ground.";
+      _defenceplace1 = "Item_ItemRadio" createVehicle (player modelToWorld[0,0,0]);}
+     else { hint "The person that you knock out have no cellphone!"};
+			};
+		};
+	};
+
     //O Key
     case 24: {
         if (_shift) then {
