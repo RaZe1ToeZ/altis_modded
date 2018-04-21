@@ -2446,6 +2446,9 @@
             <Portuguese>Menu Jogador</Portuguese>
             <Polish>Menu gracza</Polish>
         </Key>
+        <Key ID="STR_PM_Craft">
+		<Original>Craften</Original>
+		</Key>
         <Key ID="STR_PM_cItems">
             <Original>Current Items</Original>
             <Czech>Aktuální položky</Czech>
@@ -12272,4 +12275,42 @@
 			<Original>Blindfold</Original>
 		</Key>
     </Package>
+    <Package name="Craft">
+    <Key ID="STR_CRAFT_Title">
+    <Original>Baumenü</Original>
+		</Key>
+		<Key ID="STR_PM_CraftStats">
+		<Original>Sachen zum Bauen</Original>
+		</Key>
+		<Key ID="STR_PM_CraftMaterials">
+		<Original>Benötigte Sachen</Original>
+		</Key>
+		<Key ID="STR_CRAFT_Button">
+		<Original>Bauen!</Original>
+		</Key>
+		<Key ID="STR_PM_NoMaterial">
+		<Original>Du hast nicht alle Baumaterialen!</Original>
+		</Key>
+		<Key ID="STR_CRAFT_Process">
+		<Original>Du hast folgendes hergestellt: %1</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Weapon">
+		<Original>Waffen</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Uniform">
+		<Original>Kleidung</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Backpack">
+		<Original>Rucksäcke</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Item">
+		<Original>Items</Original>
+		</Key>
+		<Key ID="STR_CRAFT_AR_Backpack">
+		<Original>Du hast bereit einen Rucksack! Pack den alten erstmal weg.</Original>
+		</Key>
+		<Key ID="STR_CRAFT_AR_Uniform">
+		<Original>Du hast bereits etwas an! Mach dich nackt und versuch es nochmal.</Original>
+		</Key>
+		</Package>
 </Project>

@@ -71,6 +71,7 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+        class craftAction {};
     };
 
     class Admin {
@@ -112,6 +113,7 @@ class Life_Client_Core {
         class itemWeight {};
         class vehicleAnimate {};
         class vehicleWeightCfg {};
+        class craftCfg {};
     };
 
     class Cop {
@@ -323,6 +325,9 @@ class Life_Client_Core {
         class wantedInfo {};
         class wantedList {};
         class wantedMenu {};
+        class craft{};
+        class craft_update {};
+        class craft_updateFilter {};
     };
 
     class Shops {
