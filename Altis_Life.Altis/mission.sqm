@@ -8,11 +8,11 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=2467;
+		nextID=2474;
 	};
 	class MarkerIDProvider
 	{
-		nextID=222;
+		nextID=224;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={13952.864,32.00494,18602.59};
-		dir[]={-0.89773077,-0.32594049,0.2968044};
-		up[]={-0.3096301,0.94523668,0.10236649};
-		aside[]={0.31393808,4.4287299e-007,0.94956911};
+		pos[]={9207.124,66.201866,8040.0439};
+		dir[]={0.60587311,-0.58378059,0.54048944};
+		up[]={0.43563217,0.81191087,0.38862091};
+		aside[]={0.66570002,-1.0081567e-007,-0.74622858};
 	};
 };
 binarizationWanted=0;
@@ -643,7 +643,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1437;
+		items=1443;
 		class Item0
 		{
 			dataType="Marker";
@@ -2340,7 +2340,6 @@ class Mission
 			type="o_armor";
 			colorName="Color1_FD_F";
 			id=172;
-			atlOffset=0.39707756;
 		};
 		class Item168
 		{
@@ -23955,7 +23954,6 @@ class Mission
 					};
 					id=1042;
 					type="C_man_1";
-					atlOffset=0.1174984;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -44476,12 +44474,12 @@ class Mission
 				angles[]={0,1.3716995,6.282495};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=1729;
 			type="Land_Wreck_CarDismantled_F";
-			atlOffset=0.32770538;
 		};
 		class Item1014
 		{
@@ -44492,6 +44490,7 @@ class Mission
 				angles[]={6.2738299,0.94216359,6.2814927};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
@@ -44499,7 +44498,7 @@ class Mission
 			};
 			id=1730;
 			type="Land_EngineCrane_01_F";
-			atlOffset=0.26690292;
+			atlOffset=0.03801918;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44541,7 +44540,7 @@ class Mission
 			};
 			id=1731;
 			type="C_Hatchback_01_sport_F";
-			atlOffset=0.13269234;
+			atlOffset=0.0001411438;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44575,12 +44574,13 @@ class Mission
 				angles[]={0.013656233,6.2149425,0.0096465563};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=1732;
 			type="Land_Workbench_01_F";
-			atlOffset=0.51131439;
+			atlOffset=0.00068664551;
 		};
 		class Item1017
 		{
@@ -44598,7 +44598,7 @@ class Mission
 			};
 			id=1733;
 			type="Land_WeldingTrolley_01_F";
-			atlOffset=0.41470718;
+			atlOffset=0.33205414;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44723,7 +44723,7 @@ class Mission
 			};
 			id=1736;
 			type="Land_MultiMeter_F";
-			atlOffset=1.3099995;
+			atlOffset=0.81669807;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49136,7 +49136,7 @@ class Mission
 			};
 			id=1885;
 			type="Land_Camping_Light_F";
-			atlOffset=5.9209023;
+			atlOffset=5.7509346;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49176,7 +49176,7 @@ class Mission
 			};
 			id=1886;
 			type="Steel_Plate_F";
-			atlOffset=5.7108135;
+			atlOffset=5.5406761;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61304,6 +61304,88 @@ class Mission
 			id=2466;
 			type="Land_Shop_City_02_F";
 			atlOffset=0.1425457;
+		};
+		class Item1437
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={23522.33,96.103729,21118.494};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this setVariable [""gangNum"",""Gang_Area_1"", true];";
+			};
+			id=2468;
+			type="Flag_Red_F";
+			atlOffset=0.027000427;
+		};
+		class Item1438
+		{
+			dataType="Marker";
+			position[]={23522.789,92.141998,21117.84};
+			name="gang_cap_1";
+			text="""Uncontrolled Area""";
+			type="mil_warning";
+			colorName="ColorRed";
+			id=2469;
+			atlOffset=8.392334e-005;
+		};
+		class Item1439
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14887.711,12.560046,11087.083};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this setVariable [""gangNum"",""Gang_Area_2"", true];";
+			};
+			id=2470;
+			type="Flag_Red_F";
+			atlOffset=0.01099968;
+		};
+		class Item1440
+		{
+			dataType="Marker";
+			position[]={14887.938,8.573,11087.088};
+			name="gang_cap_2";
+			text="Uncontrolled Area";
+			type="mil_warning";
+			colorName="ColorRed";
+			id=2471;
+			atlOffset=-0.0004825592;
+		};
+		class Item1441
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9230.4072,45.460495,8055.9932};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false; this enableSimulation false; this setVariable [""gangNum"",""Gang_Area_3"", true];";
+			};
+			id=2472;
+			type="Flag_Red_F";
+		};
+		class Item1442
+		{
+			dataType="Marker";
+			position[]={9231.1523,41.472267,8055.2178};
+			name="gang_cap_3";
+			text="Uncontrolled Area";
+			type="mil_warning";
+			colorName="ColorRed";
+			id=2473;
 		};
 	};
 	class Connections
