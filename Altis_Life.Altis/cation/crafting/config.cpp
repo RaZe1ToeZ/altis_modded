@@ -9,68 +9,64 @@
 class Cation_Crafting {
 
     version = 5; // version 3.x -> 3 | 4.0 - 4.3 -> 4 | version 4.4+ -> 5
-    duration = 0.3; //Dauer im Craftingvorgang für 1% in s (Mögliche Werte zwischen 0.1 und 10)
-    
-    //Texte
-    Craftingmenu = "Baumenü";
-    CraftStats = "Sachen zum Bauen";
-    CraftingMaterials = "Benötigte Sachen";
-    CraftButton = "Bauen!";
-    Close = "Schließen";
-    Craft = "Baue";
-    NoMaterial = "Du hast nicht alle Baumaterialien!";
-    Process = "Du hast folgendes hergestellt:";
-    Process_Stay = "Du musst innerhalb von 10m bleiben, um craften zu können.";
-    NotificationBackpack = "Du hast bereits einen Rucksack! Pack den alten erstmal weg.";
-    NotificationVest = "Du hast bereits eine Veste! Pack die alte erst einmal weg.";
-    NotificationUnifrom = "Du hast bereits etwas an! Mach dich nackt und versuch es nochmal.";
-    SelectItemFirst = "Du musst zuerst einen Gegenstand auswählen!";
-    NothingNeeded = "Es wird nichts benötigt!";
-    NoRoom = "Du hast nicht genug Platz für den Gegenstand.";
-    Veh_Block = "Ein Fahrzeug blockiert gerade den Spawnpunkt";
-    NoSpawnpoint = "Kein Spawnpoint verfügbar";
-    Color = "Farbe";
+    duration = 0.3; // duration in the crafting process for 1% in s (possible values between 0.1 and 10)
+    
+    // texts
+     Craftingmenu = "Build Menu";
+     CraftStats = "Things to Build";
+     CraftingMaterials = "Things Needed";
+     CraftButton = "Build!";
+     Close = "Close";
+     Craft = "Build";
+     NoMaterial = "You do not have all building materials!";
+     Process = "You made the following:";
+     Process_Stay = "You must stay within 10m to craft.";
+     NotificationBackpack = "You already have a backpack! Take the old one away.";
+     NotificationVest = "You already have a Vest! Take the old one away.";
+     NotificationUnifrom = "You already have something! Get naked and try again.";
+     SelectItemFirst = "You must first select an item!";
+     NothingNeeded = "Nothing is needed!";
+     NoRoom = "You do not have enough space for the item.";
+     Veh_Block = "A vehicle is currently blocking the spawn point";
+     NoSpawnpoint = "No spawnpoint available";
+     Color = "color";
 
-    category[] = { //Kategorien
+    category[] = { // Categories
         {
             "weapon", //Variable
-            "Waffen", //Text
-            {"hgun_P07_F","",{"diamond_cut",2,"copper_refined",1},"","",0}, //{Item 1,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite"(Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)},
-            {"SMG_01_F","(call life_adminlevel) > 0",{"copper_refined",3,"iron_refined",3,"diamond_cut",1},"","",0} //{Item 2,Bedingung (default: ""),{benötigtes Item1, benötigte Anzahl des Item1, benötigtes Item2, benötigte Anzahl des Item2},"Skinname","Skinseite" (Skin nur bei Fahrzeugen),0 (für vItem | 1 für alle anderen Items)} Kein Komma beim letzten!
-        }, //Komma
+            "weapons", //Text
+            {"hgun_P07_F", "", {"diamond_cut", 2, "copper_refined", 1}, "", "", 0}, // {Item 1, Condition (default: ""), {required Item1, needed Number of item1, required item2, required number of item2}, "skin name", "skin page" (skin only for vehicles), 0 (for vItem | 1 for all other items)},
+            {"SMG_01_F", "(call life_adminlevel)> 0", {"copper_refined", 3, "iron_refined", 3, "diamond_cut", 1}, "", "", 0} // {Item 2, Condition ( default: ""), {required item1, required number of item1, required item2, required number of item2}, "skin name", "skin page" (Skin only for vehicles), 0 (for vItem | 1 for all other items)} No comma at the last!
+         }, // Comma
         {
             "uniform",
-            "Uniformen",
             {"U_IG_Guerilla1_1","",{"copper_refined",1},"","",0}
         },
         {
             "backpack",
-            "Rucksäcke",
             {"B_Carryall_oli","",{"diamond_cut",1},"","",0}
         },
         {
             "vest",
-            "Vesten",
             {"V_Press_F","",{"copper_refined",1},"","",0}
         },
         {
             "item",
-            "Items",
             {"iron_refined","",{"copper_refined",2},"","",1},
             {"diamond_cut","",{"copper_refined",1,"iron_refined",1},"","",1}
-        } //Kein Komma bei letzten
+        } // No comma at last
     };
 
-    craftingStations[] = { //verfügbare Kategorien an verschiedenen Crafting Stationen
+   craftingStations [] = {// available categories at various crafting stations
+         {
+             "craftingItems", // variable name
+             "craftingItemsMarker", // name of the spawnmarker on the map (must be present in the mission.sqm)
+             {"item", "weapon"} // Variable names of the available categories
+         }, // comma
         {
-            "craftingItems", //Variablenname
-            "craftingItemsMarker", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"item","weapon"} //Variablennamen der verfügbaren Kategorien
-        }, //Komma
-        {
-            "craftingClothes", //Variablenname
-            "craftingClothesMarker", //Name des Spawnmarkers auf der Map (muss in der mission.sqm vorhanden seinen)
-            {"uniform","backpack","vest"} //Variablennamen der verfügbaren Kategorien
-        } //Kein Komma bei letzten
+            "craftingClothes", // variable name
+            "craftingClothesMarker", // name of the spawnmarker on the map (must be present in the mission.sqm)
+            {"uniform", "backpack", "vest"} // Variable names of the available categories
+         } // No comma last
     };
 };

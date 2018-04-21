@@ -7,3 +7,5 @@ Via button, for example in the Z menu. onButtonClick Code:
 1
 onButtonClick = "closeDialog 0; [""Variablenname""] spawn cat_crafting_fnc_craft;";
 The variable name must be defined here in the <misson> /cation/crafting/config.cpp in craftingStations [] .
+
+https://cationstudio.com/old/installation-des-craftingsystems/
