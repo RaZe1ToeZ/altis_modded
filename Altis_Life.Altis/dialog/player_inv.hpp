@@ -222,6 +222,15 @@ class playerSettings {
                     w = 0.27;
                     h = 0.65;
                 };
+                class ButtonCraft : Life_RscButtonMenu {
+                    idc = 2025;
+                    text = "$STR_PM_Craft";
+                    onButtonClick = "closeDialog 0; createDialog""Life_craft"";";
+                    x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+                    y = 0.805;
+                    w = (6.25 / 40);
+                    h = (1 / 25);
+                };
             };
         };
 
