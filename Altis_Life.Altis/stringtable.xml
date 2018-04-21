@@ -12240,6 +12240,20 @@
             <Russian>депозит в размере $%1 в их банке. Банковский баланс: $%2 на руку Баланс: $%3</Russian>
             <German>hat $%1 auf sein Bankkonto eingezahlt. Bankkonto: $%2  Bargeld: $%3</German>
         </Key>
+        <Key ID="STR_GNOTF_CaptureAreaAttemptPopo">
+            <Original>%1 and the police are trying to neutralize an area!</Original>
+        <Key ID="STR_GNOTF_CapturingArea">
+            <Original>Claiming Area</Original>
+        </Key>
+        <Key ID="STR_GNOTF_CapturedArea">
+            <Original>Area has been captured.</Original>
+        </Key>
+        <Key ID="STR_Gang_captuerr">
+            <Original>Capture Area</Original>
+        </Key>
+        <Key ID="STR_GNOTF_CaptureAreaSuccess">
+            <Original>%1 and his gang: %2 - have claimed an area!</Original>
+        </Key>
         <Key ID="STR_DL_ML_depositedBank">
             <Original>%1 - %2 deposited $%3 into their bank. Bank Balance: $%4  On Hand Balance: $%5</Original>
             <Czech>%1 - %2 uloženy $%3 do své banky. Banka Zůstatek: $%4 po zralé úvaze rukou: $%5</Czech>
